@@ -1,5 +1,5 @@
 FROM kibana:latest
-RUN kibana plugin --install elastic/sense
-RUN kibana plugin --install elasticsearch/marvel/latest
-RUN kibana plugin --install stormpython/tagcloud
-RUN kibana plugin --install sirensolutions/kibi-radar-chart-plugin/0.1.0
+RUN gosu kibana kibana kibana plugin --install elastic/sense
+RUN gosu kibana kibana kibana plugin --install elasticsearch/marvel/latest
+RUN gosu kibana kibana kibana plugin --install stormpython/tagcloud
+RUN gosu kibana kibana kibana plugin --install sirensolutions/kibi-radar-chart-plugin/0.1.0
